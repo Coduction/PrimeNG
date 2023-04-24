@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { LazyLoadEvent } from 'primeng/api';
+import { LazyLoadEvent } from '@coduction/primeng/api';
 import { Code } from '../../domain/code';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
@@ -163,7 +163,7 @@ export class LazyLoadDoc implements OnInit {
 
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { LazyLoadEvent } from 'primeng/api';
+import { LazyLoadEvent } from '@coduction/primeng/api';
 import { Product } from '../../domain/product';
 import { ProductService } from 'src/service/productservice';
 
@@ -208,7 +208,7 @@ export class VirtualScrollerLazyLoadDemo implements OnInit {
 }`,
 
         data: `
-/* ProductService */        
+/* ProductService */
 {
     id: '1000',
     code: 'f230fh0g3',

@@ -24,14 +24,14 @@ import {
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent, animation, useAnimation } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { Header, Footer, SharedModule, PrimeTemplate, PrimeNGConfig } from 'primeng/api';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { RippleModule } from 'primeng/ripple';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
+import { DomHandler } from '@coduction/primeng/dom';
+import { Header, Footer, SharedModule, PrimeTemplate, PrimeNGConfig } from '@coduction/primeng/api';
+import { FocusTrapModule } from '@coduction/primeng/focustrap';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { UniqueComponentId, ZIndexUtils } from '@coduction/primeng/utils';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { WindowMaximizeIcon } from '@coduction/primeng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@coduction/primeng/icons/windowminimize';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);
 

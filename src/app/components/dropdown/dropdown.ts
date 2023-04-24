@@ -24,17 +24,17 @@ import {
     ViewRef
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { DomHandler } from 'primeng/dom';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
+import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, TranslationKeys } from '@coduction/primeng/api';
+import { AutoFocusModule } from '@coduction/primeng/autofocus';
+import { DomHandler } from '@coduction/primeng/dom';
+import { Overlay, OverlayModule } from '@coduction/primeng/overlay';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@coduction/primeng/scroller';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { ObjectUtils, UniqueComponentId } from '@coduction/primeng/utils';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { SearchIcon } from '@coduction/primeng/icons/search';
 
 export const DROPDOWN_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -161,7 +161,7 @@ export class DropdownItem {
                     <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>
                 </span>
             </ng-container>
-           
+
 
             <div class="p-dropdown-trigger" role="button" aria-label="dropdown trigger" aria-haspopup="listbox" [attr.aria-expanded]="overlayVisible">
                 <ng-container *ngIf="!dropdownIconTemplate">
@@ -172,7 +172,7 @@ export class DropdownItem {
                     <ng-template *ngTemplateOutlet="dropdownIconTemplate"></ng-template>
                 </span>
             </div>
-            
+
             <p-overlay
                 #overlay
                 [(visible)]="overlayVisible"

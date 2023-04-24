@@ -19,14 +19,14 @@ import {
     TemplateRef
 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { animate, style, transition, trigger, AnimationEvent } from '@angular/animations';
-import { ZIndexUtils } from 'primeng/utils';
-import { TooltipModule } from 'primeng/tooltip';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { ZIndexUtils } from '@coduction/primeng/utils';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
 
 @Component({
     selector: 'p-tieredMenuSub',

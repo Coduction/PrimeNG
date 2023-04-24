@@ -1,11 +1,11 @@
 import { NgModule, Component, Input, Output, EventEmitter, ElementRef, ContentChild, ChangeDetectionStrategy, ViewEncapsulation, ContentChildren, QueryList, TemplateRef, AfterContentInit, ViewContainerRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, Footer, PrimeTemplate } from 'primeng/api';
-import { BlockableUI } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
+import { SharedModule, Footer, PrimeTemplate } from '@coduction/primeng/api';
+import { BlockableUI } from '@coduction/primeng/api';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { MinusIcon } from 'primeng/icons/minus';
-import { PlusIcon } from 'primeng/icons/plus';
+import { MinusIcon } from '@coduction/primeng/icons/minus';
+import { PlusIcon } from '@coduction/primeng/icons/plus';
 
 type PanelIconPosition = 'start' | 'end' | 'center';
 

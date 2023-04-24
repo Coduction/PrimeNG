@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { TooltipModule } from 'primeng/tooltip';
+import { ButtonModule } from '@coduction/primeng/button';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 import { AppCodeModule } from './code/app.code.component';
 import { AppDocApiSection } from './docapisection/app.docapisection.component';
 import { AppDocSectionsComponent } from './docsection/app.docsection.component';

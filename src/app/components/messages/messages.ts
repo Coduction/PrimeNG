@@ -1,14 +1,14 @@
 import { NgModule, Component, OnDestroy, Input, Output, EventEmitter, AfterContentInit, Optional, ElementRef, ChangeDetectionStrategy, ContentChildren, QueryList, TemplateRef, ViewEncapsulation, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, style, transition, animate } from '@angular/animations';
-import { Message, PrimeTemplate, MessageService } from 'primeng/api';
+import { Message, PrimeTemplate, MessageService } from '@coduction/primeng/api';
 import { Subscription, timer } from 'rxjs';
-import { RippleModule } from 'primeng/ripple';
-import { CheckIcon } from 'primeng/icons/check';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { TimesIcon } from 'primeng/icons/times';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { InfoCircleIcon } from '@coduction/primeng/icons/infocircle';
+import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
+import { ExclamationTriangleIcon } from '@coduction/primeng/icons/exclamationtriangle';
+import { TimesIcon } from '@coduction/primeng/icons/times';
 
 @Component({
     selector: 'p-messages',

@@ -4486,7 +4486,7 @@ Invalid release, use 9.1.2 instead.
 - PrimeNG - Calendar Issues with TimePicker in TimeOnly mode. [\#4125](https://github.com/primefaces/primeng/issues/4125)
 - datatable radio/checkbox selections not updated at events [\#4119](https://github.com/primefaces/primeng/issues/4119)
 - Dropdown list shows "empty" text for null/empty values [\#4112](https://github.com/primefaces/primeng/issues/4112)
-- Export Sidebar from 'primeng' shorthand [\#4110](https://github.com/primefaces/primeng/issues/4110)
+- Export Sidebar from '@coduction/primeng' shorthand [\#4110](https://github.com/primefaces/primeng/issues/4110)
 - Spinner readonly do not affect buttons [\#4108](https://github.com/primefaces/primeng/issues/4108)
 - Lazy scrollable datatable: not stable data [\#4096](https://github.com/primefaces/primeng/issues/4096)
 - DataTable with Virtual Scroll still flickers [\#4029](https://github.com/primefaces/primeng/issues/4029)

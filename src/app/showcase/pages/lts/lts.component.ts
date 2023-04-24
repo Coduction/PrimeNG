@@ -13,7 +13,7 @@ export class LTSComponent {
 
     code: Code = {
         typescript: `import { Component, OnInit } from '@angular/core';
-import { LicenseManager } from 'primeng/api';
+import { LicenseManager } from '@coduction/primeng/api';
 
 @Component({
     selector: 'app-root',

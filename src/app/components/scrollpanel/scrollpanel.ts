@@ -19,8 +19,8 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { PrimeTemplate } from 'primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { PrimeTemplate } from '@coduction/primeng/api';
 
 @Component({
     selector: 'p-scrollPanel',

@@ -1,5 +1,5 @@
 {
-    "name": "primeng",
+    "name": "@coduction/primeng",
     "version": "15.4.2-SNAPSHOT",
     "license": "SEE LICENSE IN LICENSE.md",
     "scripts": {
@@ -23,7 +23,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primeng.git"
+        "url": "https://github.com/coduction/primeng.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/coduction"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~15.2.1",

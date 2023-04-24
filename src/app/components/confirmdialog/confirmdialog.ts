@@ -22,16 +22,16 @@ import {
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent, useAnimation, animation } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { DomHandler } from 'primeng/dom';
-import { Footer, SharedModule, PrimeTemplate, PrimeNGConfig, TranslationKeys, ConfirmEventType } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { Confirmation } from 'primeng/api';
-import { ConfirmationService } from 'primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { Footer, SharedModule, PrimeTemplate, PrimeNGConfig, TranslationKeys, ConfirmEventType } from '@coduction/primeng/api';
+import { ButtonModule } from '@coduction/primeng/button';
+import { Confirmation } from '@coduction/primeng/api';
+import { ConfirmationService } from '@coduction/primeng/api';
 import { Subscription } from 'rxjs';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
-import { TimesIcon } from 'primeng/icons/times';
-import { CheckIcon } from 'primeng/icons/check';
+import { UniqueComponentId, ZIndexUtils } from '@coduction/primeng/utils';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { CheckIcon } from '@coduction/primeng/icons/check';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}', style({ transform: 'none', opacity: 1 }))]);
 

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@coduction/primeng/api';
 import { Code } from '../../domain/code';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
@@ -169,7 +169,7 @@ export class SortingDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@coduction/primeng/api';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
 
@@ -227,7 +227,7 @@ export class DataViewSortingDemo {
 }`,
 
         data: `
-/* ProductService */        
+/* ProductService */
 {
     id: '1000',
     code: 'f230fh0g3',

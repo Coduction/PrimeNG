@@ -20,14 +20,14 @@ import {
     Inject,
     PLATFORM_ID
 } from '@angular/core';
-import { PrimeTemplate, SharedModule, Header, Footer } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
+import { PrimeTemplate, SharedModule, Header, Footer } from '@coduction/primeng/api';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { UniqueComponentId } from 'primeng/utils';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
+import { UniqueComponentId } from '@coduction/primeng/utils';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { ChevronLeftIcon } from '@coduction/primeng/icons/chevronleft';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { ChevronUpIcon } from '@coduction/primeng/icons/chevronup';
 
 @Component({
     selector: 'p-carousel',

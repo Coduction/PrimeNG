@@ -1,9 +1,9 @@
 import { NgModule, Component, Input, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CheckIcon } from 'primeng/icons/check';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { InfoCircleIcon } from '@coduction/primeng/icons/infocircle';
+import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
+import { ExclamationTriangleIcon } from '@coduction/primeng/icons/exclamationtriangle';
 
 @Component({
     selector: 'p-message',

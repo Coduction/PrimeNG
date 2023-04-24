@@ -21,20 +21,20 @@ import {
     Inject
 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Message, PrimeNGConfig } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { MessageService } from 'primeng/api';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
+import { Message, PrimeNGConfig } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { MessageService } from '@coduction/primeng/api';
+import { ObjectUtils, UniqueComponentId } from '@coduction/primeng/utils';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { Subscription } from 'rxjs';
 import { trigger, state, style, transition, animate, query, animateChild, AnimationEvent } from '@angular/animations';
-import { ZIndexUtils } from 'primeng/utils';
-import { CheckIcon } from 'primeng/icons/check';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { TimesIcon } from 'primeng/icons/times';
+import { ZIndexUtils } from '@coduction/primeng/utils';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { InfoCircleIcon } from '@coduction/primeng/icons/infocircle';
+import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
+import { ExclamationTriangleIcon } from '@coduction/primeng/icons/exclamationtriangle';
+import { TimesIcon } from '@coduction/primeng/icons/times';
 
 @Component({
     selector: 'p-toastItem',

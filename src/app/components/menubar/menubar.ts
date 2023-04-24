@@ -21,15 +21,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { ZIndexUtils } from 'primeng/utils';
-import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { ZIndexUtils } from '@coduction/primeng/utils';
+import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 import { debounce, filter, interval, Subject, Subscription } from 'rxjs';
-import { BarsIcon } from 'primeng/icons/bars';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { BarsIcon } from '@coduction/primeng/icons/bars';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
 
 @Injectable()
 export class MenubarService {

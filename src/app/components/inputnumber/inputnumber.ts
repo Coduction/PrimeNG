@@ -21,13 +21,13 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { TimesIcon } from 'primeng/icons/times';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
+import { ButtonModule } from '@coduction/primeng/button';
+import { DomHandler } from '@coduction/primeng/dom';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { AngleUpIcon } from '@coduction/primeng/icons/angleup';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
 
 export const INPUTNUMBER_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -82,7 +82,7 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
                 <TimesIcon *ngIf="!clearIconTemplate" [ngClass]="'p-inputnumber-clear-icon'" (click)="clear()"/>
                 <span *ngIf="clearIconTemplate" (click)="clear()" class="p-inputnumber-clear-icon">
                     <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>
-                </span>            
+                </span>
             </ng-container>
 
             <span class="p-inputnumber-button-group" *ngIf="showButtons && buttonLayout === 'stacked'">

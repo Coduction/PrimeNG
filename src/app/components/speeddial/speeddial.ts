@@ -20,13 +20,13 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { SharedModule, PrimeTemplate, MenuItem } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { DomHandler } from 'primeng/dom';
+import { SharedModule, PrimeTemplate, MenuItem } from '@coduction/primeng/api';
+import { ButtonModule } from '@coduction/primeng/button';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { DomHandler } from '@coduction/primeng/dom';
 import { RouterModule } from '@angular/router';
-import { PlusIcon } from 'primeng/icons/plus';
+import { PlusIcon } from '@coduction/primeng/icons/plus';
 
 @Component({
     selector: 'p-speedDial',

@@ -24,19 +24,19 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
+import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@coduction/primeng/api';
+import { AutoFocusModule } from '@coduction/primeng/autofocus';
+import { ButtonModule } from '@coduction/primeng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { Overlay, OverlayModule } from '@coduction/primeng/overlay';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@coduction/primeng/scroller';
+import { ObjectUtils, UniqueComponentId } from '@coduction/primeng/utils';
+import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
+import { SpinnerIcon } from '@coduction/primeng/icons/spinner';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
 
 export const AUTOCOMPLETE_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

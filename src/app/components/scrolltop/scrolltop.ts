@@ -1,10 +1,10 @@
 import { NgModule, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, OnInit, OnDestroy, ElementRef, ChangeDetectorRef, Inject, Renderer2, PLATFORM_ID, ContentChildren, QueryList, TemplateRef } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { animate, state, style, transition, trigger, AnimationEvent } from '@angular/animations';
-import { DomHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ZIndexUtils } from '@coduction/primeng/utils';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { ChevronUpIcon } from '@coduction/primeng/icons/chevronup';
 
 @Component({
     selector: 'p-scrollTop',

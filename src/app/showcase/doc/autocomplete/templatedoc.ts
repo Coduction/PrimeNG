@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@coduction/primeng/api';
 import { Code } from '../../domain/code';
 import { CountryService } from '../../service/countryservice';
 
@@ -99,7 +99,7 @@ export class TemplateDoc {
 
     code: Code = {
         basic: `
-<p-autoComplete [(ngModel)]="selectedCountryAdvanced" [suggestions]="filteredCountries" 
+<p-autoComplete [(ngModel)]="selectedCountryAdvanced" [suggestions]="filteredCountries"
     (completeMethod)="filterCountry($event)" field="name" [dropdown]="true">
         <ng-template let-country pTemplate="item">
             <div class="flex align-items-center gap-2">
@@ -123,7 +123,7 @@ export class TemplateDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@coduction/primeng/api';
 import { CountryService } from 'src/service/countryservice';
 
 @Component({

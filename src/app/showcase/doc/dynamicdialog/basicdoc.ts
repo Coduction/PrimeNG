@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { MessageService } from '@coduction/primeng/api';
+import { DialogService, DynamicDialogRef } from '@coduction/primeng/dynamicdialog';
 import { Code } from '../../domain/code';
 import { Product } from '../../domain/product';
 import { ProductListDemo } from './productlistdemo';
@@ -71,8 +71,8 @@ export class BasicDoc implements OnDestroy {
 
         typescript: `
 import { Component, OnDestroy } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { MessageService } from '@coduction/primeng/api';
+import { DialogService, DynamicDialogRef } from '@coduction/primeng/dynamicdialog';
 import { Product } from '../../domain/product';
 import { ProductListDemo } from './productlistdemo';
 
@@ -82,7 +82,7 @@ import { ProductListDemo } from './productlistdemo';
     providers: [DialogService, MessageService]
 })
 export class DynamicDialogBasicDemo implements OnDestroy {
-    
+
     constructor(public dialogService: DialogService, public messageService: MessageService) {}
 
     ref: DynamicDialogRef;
@@ -141,7 +141,7 @@ export interface Product {
             path: 'src/app/demo/productlistdemo.ts',
             name: 'ProductListDemo',
             content: `import { Component, OnInit } from '@angular/core';
-import { DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DynamicDialogRef } from '@coduction/primeng/dynamicdialog';
 import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
 

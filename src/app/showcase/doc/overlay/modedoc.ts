@@ -23,7 +23,7 @@ export class ModeDoc {
 
     code: Code = {
         typescript: `
-import { PrimeNGConfig, OverlayOptions } from 'primeng/api';
+import { PrimeNGConfig, OverlayOptions } from '@coduction/primeng/api';
 
 @Component({
     selector: 'app-root',
@@ -37,13 +37,13 @@ export class AppComponent implements OnInit {
         this.primengConfig.overlayOptions: OverlayOptions = {
             mode: 'modal'
         };
-    } 
+    }
 }`
     };
 
     code2: Code = {
         basic: `
-import { PrimeNGConfig, OverlayOptions, ResponsiveOverlayDirectionType } from 'primeng/api';
+import { PrimeNGConfig, OverlayOptions, ResponsiveOverlayDirectionType } from '@coduction/primeng/api';
 
 const responsiveOptions: ResponsiveOverlayOptions = {
     // style?: any;                                     // Style of component in given breakpoint or media query

@@ -29,14 +29,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@coduction/primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { Subscription } from 'rxjs';
-import { TimesIcon } from 'primeng/icons/times';
-import { EyeSlashIcon } from 'primeng/icons/eyeslash';
-import { EyeIcon } from 'primeng/icons/eye';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { EyeSlashIcon } from '@coduction/primeng/icons/eyeslash';
+import { EyeIcon } from '@coduction/primeng/icons/eye';
 
 @Directive({
     selector: '[pPassword]',
@@ -321,7 +321,7 @@ export const Password_VALUE_ACCESSOR: any = {
                 <TimesIcon *ngIf="!clearIconTemplate" [styleClass]="'p-password-clear-icon'" (click)="clear()" />
                 <span (click)="clear()" class="p-password-clear-icon">
                     <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>
-                </span>    
+                </span>
             </ng-container>
 
             <ng-container *ngIf="toggleMask">

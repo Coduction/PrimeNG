@@ -27,23 +27,23 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, SharedModule, SortMeta, TreeNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { PaginatorModule } from 'primeng/paginator';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule, ScrollerOptions } from 'primeng/scroller';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, SharedModule, SortMeta, TreeNode } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { PaginatorModule } from '@coduction/primeng/paginator';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { Scroller, ScrollerModule, ScrollerOptions } from '@coduction/primeng/scroller';
+import { ObjectUtils } from '@coduction/primeng/utils';
 import { Subject, Subscription } from 'rxjs';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { MinusIcon } from 'primeng/icons/minus';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
+import { SortAmountDownIcon } from '@coduction/primeng/icons/sortamountdown';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { ArrowDownIcon } from '@coduction/primeng/icons/arrowdown';
+import { ArrowUpIcon } from '@coduction/primeng/icons/arrowup';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { MinusIcon } from '@coduction/primeng/icons/minus';
+import { SortAltIcon } from '@coduction/primeng/icons/sortalt';
+import { SortAmountUpAltIcon } from '@coduction/primeng/icons/sortamountupalt';
+import { SpinnerIcon } from '@coduction/primeng/icons/spinner';
 
 @Injectable()
 export class TreeTableService {

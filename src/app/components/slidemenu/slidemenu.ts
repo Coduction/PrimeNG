@@ -23,14 +23,14 @@ import {
 } from '@angular/core';
 import { trigger, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomHandler, ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
+import { DomHandler, ConnectedOverlayScrollHandler } from '@coduction/primeng/dom';
+import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
 import { RouterModule } from '@angular/router';
-import { ZIndexUtils } from 'primeng/utils';
-import { TooltipModule } from 'primeng/tooltip';
-import { CaretRightIcon } from 'primeng/icons/caretright';
-import { CaretLeftIcon } from 'primeng/icons/caretleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { ZIndexUtils } from '@coduction/primeng/utils';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { CaretRightIcon } from '@coduction/primeng/icons/caretright';
+import { CaretLeftIcon } from '@coduction/primeng/icons/caretleft';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
 
 @Component({
     selector: 'p-slideMenuSub',

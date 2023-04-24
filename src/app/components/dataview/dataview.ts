@@ -19,14 +19,14 @@ import {
     OnDestroy
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ObjectUtils } from 'primeng/utils';
-import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from 'primeng/api';
-import { PaginatorModule } from 'primeng/paginator';
-import { BlockableUI } from 'primeng/api';
+import { ObjectUtils } from '@coduction/primeng/utils';
+import { Header, Footer, PrimeTemplate, SharedModule, FilterService, TranslationKeys, PrimeNGConfig } from '@coduction/primeng/api';
+import { PaginatorModule } from '@coduction/primeng/paginator';
+import { BlockableUI } from '@coduction/primeng/api';
 import { Subscription } from 'rxjs';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { ThLargeIcon } from 'primeng/icons/thlarge';
-import { BarsIcon } from 'primeng/icons/bars';
+import { SpinnerIcon } from '@coduction/primeng/icons/spinner';
+import { ThLargeIcon } from '@coduction/primeng/icons/thlarge';
+import { BarsIcon } from '@coduction/primeng/icons/bars';
 
 @Component({
     selector: 'p-dataView',
