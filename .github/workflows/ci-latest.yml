@@ -1,15 +1,17 @@
-name: NodeJS CI
+name: Daily Build
 
 on:
-  push:
-    branches: [ master ]
+  schedule:
+    - cron: '0 6 * * *'
 
 permissions:
   contents: read
 
 jobs:
-  build:
+  nightly:
+    if: github.repository == 'primefaces/primeng' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    name: Node ${{ matrix.node-version }}
 
     strategy:
       matrix:
@@ -27,18 +29,8 @@ jobs:
     - name: Build
       run: |
         npm install
-
-    - name: Code Format
-      if: ${{ success() }}
+        npm run build:lib
+    - name: Publish
       run: |
-        npm run format:check
-
-    - name: Security Check
-      if: ${{ success() }}
-      run: |
-        npm run security:check
-
-    - name: Test
-      if: ${{ success() }}
-      run: |
-        npm run test:headless
+        cd dist
+        npm publish --tag latest

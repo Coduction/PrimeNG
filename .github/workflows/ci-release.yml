@@ -1,0 +1,60 @@
+name: Daily Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      major:
+        description: 'Major'
+        required: true
+        default: '0'
+      minor:
+        description: 'Minor'
+        required: true
+        default: '0'
+      patch:
+        description: 'Patch'
+        required: true
+        default: '0'
+      deploy:
+        description: 'Deploy'
+        type: boolean
+
+env:
+  FONTAWESOME_NPM_TOKEN: ${{ secrets.FONTAWESOME_NPM_TOKEN }}
+  CODUCTION_PACKAGES_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  MAJOR: ${{ github.event.inputs.major }}
+  MINOR: ${{ github.event.inputs.minor }}
+  PATCH: ${{ github.event.inputs.patch }}
+  CHANNEL: ${{ github.event.inputs.channel }}
+
+permissions:
+  contents: read
+
+jobs:
+  nightly:
+    if: github.repository == 'primefaces/primeng' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    name: Node ${{ matrix.node-version }}
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Build
+      run: |
+        npm install
+        npm run build:lib
+    - name: Publish
+      run: |
+        cd dist
+        npm publish --tag latest
