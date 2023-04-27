@@ -28,9 +28,6 @@ env:
   PATCH: ${{ github.event.inputs.patch }}
   CHANNEL: ${{ github.event.inputs.channel }}
 
-permissions:
-  contents: read
-
 jobs:
   nightly:
     runs-on: ubuntu-latest
