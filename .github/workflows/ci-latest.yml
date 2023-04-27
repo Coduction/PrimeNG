@@ -5,6 +5,10 @@ on:
     branches:
      - master
 
+env:
+  FONTAWESOME_NPM_TOKEN: ${{ secrets.FONTAWESOME_NPM_TOKEN }}
+  CODUCTION_PACKAGES_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   nightly:
     runs-on: ubuntu-latest
