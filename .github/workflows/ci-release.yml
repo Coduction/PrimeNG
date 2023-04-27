@@ -1,4 +1,4 @@
-name: Daily Build
+name: Build Library - Release
 
 on:
   workflow_dispatch:
