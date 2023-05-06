@@ -1,5 +1,6 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import {
+    AfterContentInit,
     ChangeDetectionStrategy,
     ChangeDetectorRef,
     Component,
@@ -8,11 +9,11 @@ import {
     EventEmitter,
     forwardRef,
     Inject,
+    Injector,
     Input,
     NgModule,
-    OnInit,
     OnChanges,
-    AfterContentInit,
+    OnInit,
     Output,
     QueryList,
     SimpleChanges,
@@ -79,7 +80,7 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
                 (blur)="onInputBlur($event)"
             />
             <ng-container *ngIf="buttonLayout != 'vertical' && showClear && value">
-                <TimesIcon *ngIf="!clearIconTemplate" [ngClass]="'p-inputnumber-clear-icon'" (click)="clear()"/>
+                <TimesIcon *ngIf="!clearIconTemplate" [ngClass]="'p-inputnumber-clear-icon'" (click)="clear()" />
                 <span *ngIf="clearIconTemplate" (click)="clear()" class="p-inputnumber-clear-icon">
                     <ng-template *ngTemplateOutlet="clearIconTemplate"></ng-template>
                 </span>
@@ -100,11 +101,11 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
                     (keyup)="onUpButtonKeyUp()"
                     tabindex="-1"
                 >
-                <span *ngIf="incrementButtonIcon" [ngClass]="incrementButtonIcon"></span>
-                <ng-container *ngIf="!incrementButtonIcon">
-                    <AngleUpIcon *ngIf="!incrementButtonIconTemplate"/>
-                    <ng-template *ngTemplateOutlet="incrementButtonIconTemplate"></ng-template>
-                </ng-container>
+                    <span *ngIf="incrementButtonIcon" [ngClass]="incrementButtonIcon"></span>
+                    <ng-container *ngIf="!incrementButtonIcon">
+                        <AngleUpIcon *ngIf="!incrementButtonIconTemplate" />
+                        <ng-template *ngTemplateOutlet="incrementButtonIconTemplate"></ng-template>
+                    </ng-container>
                 </button>
                 <button
                     type="button"
@@ -120,12 +121,12 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
                     (keyup)="onDownButtonKeyUp()"
                     tabindex="-1"
                 >
-                <span *ngIf="decrementButtonIcon" [ngClass]="decrementButtonIcon"></span>
-                <ng-container *ngIf="!decrementButtonIcon">
-                    <AngleDownIcon *ngIf="!decrementButtonIconTemplate"/>
-                    <ng-template *ngTemplateOutlet="decrementButtonIconTemplate"></ng-template>
-                </ng-container>
-            </button>
+                    <span *ngIf="decrementButtonIcon" [ngClass]="decrementButtonIcon"></span>
+                    <ng-container *ngIf="!decrementButtonIcon">
+                        <AngleDownIcon *ngIf="!decrementButtonIconTemplate" />
+                        <ng-template *ngTemplateOutlet="decrementButtonIconTemplate"></ng-template>
+                    </ng-container>
+                </button>
             </span>
             <button
                 type="button"
@@ -144,7 +145,7 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
             >
                 <span *ngIf="incrementButtonIcon" [ngClass]="incrementButtonIcon"></span>
                 <ng-container *ngIf="!incrementButtonIcon">
-                    <AngleUpIcon *ngIf="!incrementButtonIconTemplate"/>
+                    <AngleUpIcon *ngIf="!incrementButtonIconTemplate" />
                     <ng-template *ngTemplateOutlet="incrementButtonIconTemplate"></ng-template>
                 </ng-container>
             </button>
@@ -163,12 +164,12 @@ export const INPUTNUMBER_VALUE_ACCESSOR: any = {
                 (keyup)="onDownButtonKeyUp()"
                 tabindex="-1"
             >
-            <span *ngIf="decrementButtonIcon" [ngClass]="decrementButtonIcon"></span>
-            <ng-container *ngIf="!decrementButtonIcon">
-                <AngleDownIcon *ngIf="!decrementButtonIconTemplate"/>
-                <ng-template *ngTemplateOutlet="decrementButtonIconTemplate"></ng-template>
-            </ng-container>
-        </button>
+                <span *ngIf="decrementButtonIcon" [ngClass]="decrementButtonIcon"></span>
+                <ng-container *ngIf="!decrementButtonIcon">
+                    <AngleDownIcon *ngIf="!decrementButtonIconTemplate" />
+                    <ng-template *ngTemplateOutlet="decrementButtonIconTemplate"></ng-template>
+                </ng-container>
+            </button>
         </span>
     `,
     changeDetection: ChangeDetectionStrategy.OnPush,
@@ -201,7 +202,7 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
 
     @Input() maxlength: number;
 
-    @Input() tabindex: string;
+    @Input() tabindex: number;
 
     @Input() title: string;
 
@@ -258,8 +259,6 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
     @Input() inputStyleClass: string;
 
     @Input() showClear: boolean = false;
-
-    @Input() updateOn: 'blur' | 'change' | null | undefined = 'change';
 
     @ViewChild('input') input: ElementRef;
 
@@ -335,7 +334,9 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
         if (this.timer) this.clearTimer();
     }
 
-    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, private cd: ChangeDetectorRef) {}
+    private ngControl: NgControl | null = null;
+
+    constructor(@Inject(DOCUMENT) private document: Document, public el: ElementRef, private cd: ChangeDetectorRef, private readonly injector: Injector) {}
 
     ngOnChanges(simpleChange: SimpleChanges) {
         const props = ['locale', 'localeMatcher', 'mode', 'currency', 'currencyDisplay', 'useGrouping', 'minFractionDigits', 'maxFractionDigits', 'prefix', 'suffix'];
@@ -363,6 +364,8 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
     }
 
     ngOnInit() {
+        this.ngControl = this.injector.get(NgControl, null, { optional: true });
+
         this.constructParser();
 
         this.initialized = true;
@@ -1000,9 +1003,7 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
         if (this.isValueChanged(currentValue, newValue)) {
             this.input.nativeElement.value = this.formatValue(newValue);
             this.input.nativeElement.setAttribute('aria-valuenow', newValue);
-            if (this.updateOn !== 'blur') {
-                this.updateModel(event, newValue);
-            }
+            this.updateModel(event, newValue);
             this.onInput.emit({ originalEvent: event, value: newValue, formattedValue: currentValue });
         }
     }
@@ -1144,9 +1145,7 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
         let newValue = this.validateValue(this.parseValue(this.input.nativeElement.value));
         this.input.nativeElement.value = this.formatValue(newValue);
         this.input.nativeElement.setAttribute('aria-valuenow', newValue);
-        if (this.updateOn === 'blur') {
-            this.updateModel(event, newValue);
-        }
+        this.updateModel(event, newValue);
         this.onBlur.emit(event);
     }
 
@@ -1156,8 +1155,15 @@ export class InputNumber implements OnInit, AfterContentInit, OnChanges, Control
     }
 
     updateModel(event, value) {
+        const isBlurUpdateOnMode = this.ngControl?.control?.updateOn === 'blur';
+
         if (this.value !== value) {
             this.value = value;
+
+            if (!(isBlurUpdateOnMode && this.focused)) {
+                this.onModelChange(value);
+            }
+        } else if (isBlurUpdateOnMode) {
             this.onModelChange(value);
         }
         this.onModelTouched();
