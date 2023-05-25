@@ -1,9 +1,9 @@
-import { NgModule, Component, Input, ElementRef, ContentChild, ChangeDetectionStrategy, ViewEncapsulation, TemplateRef, AfterContentInit, ContentChildren, QueryList, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, Input, NgModule, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from '@coduction/primeng/ripple';
-import { TooltipModule } from '@coduction/primeng/tooltip';
+import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
+import { RippleModule } from 'primeng/ripple';
+import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
     selector: 'p-dock',
@@ -71,19 +71,35 @@ import { TooltipModule } from '@coduction/primeng/tooltip';
     }
 })
 export class Dock implements AfterContentInit {
-    @Input() id: string;
+    /**
+     * Current id state as a string.
+     * @group Props
+     */
+    @Input() id: string | undefined;
+    /**
+     * Inline style of the element.
+     * @group Props
+     */
+    @Input() style: { [klass: string]: any } | null | undefined;
+    /**
+     * Class of the element.
+     * @group Props
+     */
+    @Input() styleClass: string | undefined;
+    /**
+     * MenuModel instance to define the action items.
+     * @group Props
+     */
+    @Input() model: MenuItem[] | undefined | null = null;
+    /**
+     * Position of element. Valid values are 'bottom', 'top', 'left' and 'right'.
+     * @group Props
+     */
+    @Input() position: 'bottom' | 'top' | 'left' | 'right' = 'bottom';
 
-    @Input() style: any;
+    @ContentChildren(PrimeTemplate) templates: QueryList<PrimeTemplate> | undefined;
 
-    @Input() styleClass: string;
-
-    @Input() model: any[] = null;
-
-    @Input() position: string = 'bottom';
-
-    @ContentChildren(PrimeTemplate) templates: QueryList<any>;
-
-    itemTemplate: TemplateRef<any>;
+    itemTemplate: TemplateRef<any> | undefined;
 
     currentIndex: number;
 
@@ -92,7 +108,7 @@ export class Dock implements AfterContentInit {
     }
 
     ngAfterContentInit() {
-        this.templates.forEach((item) => {
+        this.templates?.forEach((item) => {
             switch (item.getType()) {
                 case 'item':
                     this.itemTemplate = item.template;
@@ -110,7 +126,7 @@ export class Dock implements AfterContentInit {
         this.cd.markForCheck();
     }
 
-    onItemMouseEnter(index) {
+    onItemMouseEnter(index: number) {
         this.currentIndex = index;
 
         if (index === 1) {
@@ -119,7 +135,7 @@ export class Dock implements AfterContentInit {
         this.cd.markForCheck();
     }
 
-    onItemClick(e, item) {
+    onItemClick(e: Event, item: MenuItem) {
         if (item.command) {
             item.command({ originalEvent: e, item });
         }
@@ -135,7 +151,7 @@ export class Dock implements AfterContentInit {
         return item.routerLink && !item.disabled;
     }
 
-    itemClass(index) {
+    itemClass(index: number) {
         return {
             'p-dock-item': true,
             'p-dock-item-second-prev': this.currentIndex - 2 === index,
