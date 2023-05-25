@@ -1,11 +1,11 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, forwardRef, Inject, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { InputTextModule } from 'primeng/inputtext';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { Nullable } from 'primeng/ts-helpers';
+import { PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 import { ChipsAddEvent, ChipsRemoveEvent, ChipsClickEvent } from './chips.interface';
 
 export const CHIPS_VALUE_ACCESSOR: any = {

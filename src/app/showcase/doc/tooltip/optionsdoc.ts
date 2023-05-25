@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Code } from '../../domain/code';
-import { TooltipOptions } from 'primeng/tooltip';
+import { TooltipOptions } from '@coduction/primeng/tooltip';
 
 @Component({
     selector: 'options-doc',
@@ -37,7 +37,7 @@ export class OptionsDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-import { TooltipOptions } from 'primeng/tooltip';
+import { TooltipOptions } from '@coduction/primeng/tooltip';
 
 @Component({
     selector: 'tooltip-options-demo',

@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, Input, NgModule, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 
 @Component({
     selector: 'p-dock',

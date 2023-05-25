@@ -1,10 +1,10 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterContentInit, AfterViewInit, ChangeDetectionStrategy, Component, ContentChildren, Directive, ElementRef, EventEmitter, Inject, Input, NgModule, OnDestroy, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { RippleModule } from 'primeng/ripple';
-import { ObjectUtils } from 'primeng/utils';
+import { PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { SpinnerIcon } from '@coduction/primeng/icons/spinner';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { ObjectUtils } from '@coduction/primeng/utils';
 
 type ButtonIconPosition = 'left' | 'right' | 'top' | 'bottom';
 

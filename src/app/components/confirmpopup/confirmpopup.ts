@@ -1,11 +1,11 @@
 import { AnimationEvent, animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, Inject, Input, NgModule, OnDestroy, QueryList, Renderer2, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { Confirmation, ConfirmationService, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { Confirmation, ConfirmationService, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@coduction/primeng/api';
+import { ButtonModule } from '@coduction/primeng/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { Subscription } from 'rxjs';
 
 @Component({

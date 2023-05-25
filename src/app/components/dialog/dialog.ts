@@ -24,15 +24,15 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { Footer, Header, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { FocusTrapModule } from '@coduction/primeng/focustrap';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { WindowMaximizeIcon } from '@coduction/primeng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@coduction/primeng/icons/windowminimize';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
+import { UniqueComponentId, ZIndexUtils } from '@coduction/primeng/utils';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);
 

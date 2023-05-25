@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { FilterMetadata, LazyLoadMeta, SortMeta, TreeNode } from 'primeng/api';
+import { FilterMetadata, LazyLoadMeta, SortMeta, TreeNode } from '@coduction/primeng/api';
 import { TreeTable } from './treetable';
 /**
  * Paginator state.

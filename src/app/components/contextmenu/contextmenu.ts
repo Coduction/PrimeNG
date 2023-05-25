@@ -21,13 +21,13 @@ import {
     forwardRef
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ContextMenuService, MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { ContextMenuService, MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { Subject, Subscription } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
@@ -342,7 +342,7 @@ export class ContextMenu implements AfterViewInit, OnDestroy {
         if (this.global) {
             const documentTarget: any = this.el ? this.el.nativeElement.ownerDocument : 'document';
             this.triggerEventListener = this.renderer.listen(documentTarget, this.triggerEvent, (event) => {
-                if(this.containerViewChild && this.containerViewChild.nativeElement.style.display !== 'none') {
+                if (this.containerViewChild && this.containerViewChild.nativeElement.style.display !== 'none') {
                     this.hide();
                 }
                 this.show(event);
@@ -350,7 +350,7 @@ export class ContextMenu implements AfterViewInit, OnDestroy {
             });
         } else if (this.target) {
             this.triggerEventListener = this.renderer.listen(this.target, this.triggerEvent, (event) => {
-                if(this.containerViewChild && this.containerViewChild.nativeElement.style.display !== 'none') {
+                if (this.containerViewChild && this.containerViewChild.nativeElement.style.display !== 'none') {
                     this.hide();
                 }
                 this.show(event);

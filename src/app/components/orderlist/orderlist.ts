@@ -19,18 +19,18 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { SharedModule, PrimeTemplate, FilterService } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@coduction/primeng/button';
+import { SharedModule, PrimeTemplate, FilterService } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ObjectUtils, UniqueComponentId } from '@coduction/primeng/utils';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { CdkDragDrop, DragDropModule, moveItemInArray } from '@angular/cdk/drag-drop';
-import { AngleDoubleDownIcon } from 'primeng/icons/angledoubledown';
-import { AngleDoubleUpIcon } from 'primeng/icons/angledoubleup';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { SearchIcon } from 'primeng/icons/search';
-import { Nullable } from 'primeng/ts-helpers';
+import { AngleDoubleDownIcon } from '@coduction/primeng/icons/angledoubledown';
+import { AngleDoubleUpIcon } from '@coduction/primeng/icons/angledoubleup';
+import { AngleUpIcon } from '@coduction/primeng/icons/angleup';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { SearchIcon } from '@coduction/primeng/icons/search';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 import { OrderListFilterEvent, OrderListFilterOptions, OrderListSelectionChangeEvent } from './orderlist.interface';
 
 @Component({
@@ -638,17 +638,17 @@ export class OrderList implements AfterViewChecked, AfterContentInit {
                         .p-orderlist[${this.id}] {
                             flex-direction: column;
                         }
-    
+
                         .p-orderlist[${this.id}] .p-orderlist-controls {
                             padding: var(--content-padding);
                             flex-direction: row;
                         }
-    
+
                         .p-orderlist[${this.id}] .p-orderlist-controls .p-button {
                             margin-right: var(--inline-spacing);
                             margin-bottom: 0;
                         }
-    
+
                         .p-orderlist[${this.id}] .p-orderlist-controls .p-button:last-child {
                             margin-right: 0;
                         }

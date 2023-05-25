@@ -22,20 +22,20 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { BlockableUI, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { ScrollerOptions } from 'primeng/scroller';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { Scroller, ScrollerModule } from '@coduction/primeng/scroller';
+import { ScrollerOptions } from '@coduction/primeng/scroller';
+import { ObjectUtils } from '@coduction/primeng/utils';
 import { Subscription } from 'rxjs';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { MinusIcon } from 'primeng/icons/minus';
-import { SearchIcon } from 'primeng/icons/search';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { Nullable } from 'primeng/ts-helpers';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { MinusIcon } from '@coduction/primeng/icons/minus';
+import { SearchIcon } from '@coduction/primeng/icons/search';
+import { SpinnerIcon } from '@coduction/primeng/icons/spinner';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 import {
     TreeFilterEvent,
     TreeLazyLoadEvent,

@@ -30,28 +30,28 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { DropdownModule } from 'primeng/dropdown';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputTextModule } from 'primeng/inputtext';
-import { PaginatorModule } from 'primeng/paginator';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { ScrollerOptions } from 'primeng/scroller';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@coduction/primeng/api';
+import { ButtonModule } from '@coduction/primeng/button';
+import { CalendarModule } from '@coduction/primeng/calendar';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { DropdownModule } from '@coduction/primeng/dropdown';
+import { InputNumberModule } from '@coduction/primeng/inputnumber';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { PaginatorModule } from '@coduction/primeng/paginator';
+import { Scroller, ScrollerModule } from '@coduction/primeng/scroller';
+import { ScrollerOptions } from '@coduction/primeng/scroller';
+import { SelectButtonModule } from '@coduction/primeng/selectbutton';
+import { TriStateCheckboxModule } from '@coduction/primeng/tristatecheckbox';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@coduction/primeng/utils';
 import { Subject, Subscription } from 'rxjs';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { FilterIcon } from 'primeng/icons/filter';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
+import { ArrowDownIcon } from '@coduction/primeng/icons/arrowdown';
+import { ArrowUpIcon } from '@coduction/primeng/icons/arrowup';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { FilterIcon } from '@coduction/primeng/icons/filter';
+import { SortAltIcon } from '@coduction/primeng/icons/sortalt';
+import { SortAmountDownIcon } from '@coduction/primeng/icons/sortamountdown';
+import { SortAmountUpAltIcon } from '@coduction/primeng/icons/sortamountupalt';
+import { SpinnerIcon } from '@coduction/primeng/icons/spinner';
 import {
     TableColResizeEvent,
     TableColumnReorderEvent,
@@ -70,7 +70,7 @@ import {
     TableRowUnSelectEvent,
     TableSelectAllChangeEvent
 } from './table.interface';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
 
 @Injectable()
 export class TableService {
@@ -2923,24 +2923,24 @@ export class Table implements OnInit, AfterViewInit, AfterContentInit, Blockable
         #${this.id}-table > .p-datatable-tfoot > tr > td {
             display: none !important;
         }
-    
+
         #${this.id}-table > .p-datatable-tbody > tr > td {
             display: flex;
             width: 100% !important;
             align-items: center;
             justify-content: space-between;
         }
-    
+
         #${this.id}-table > .p-datatable-tbody > tr > td:not(:last-child) {
             border: 0 none;
         }
-    
+
         #${this.id}.p-datatable-gridlines > .p-datatable-wrapper > .p-datatable-table > .p-datatable-tbody > tr > td:last-child {
             border-top: 0;
             border-right: 0;
             border-left: 0;
         }
-    
+
         #${this.id}-table > .p-datatable-tbody > tr > td > .p-column-title {
             display: block;
         }

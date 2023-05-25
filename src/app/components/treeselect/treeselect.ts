@@ -2,16 +2,16 @@ import { AnimationEvent } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, forwardRef, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TreeNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Tree, TreeModule } from 'primeng/tree';
-import { ObjectUtils } from 'primeng/utils';
-import { Nullable } from 'primeng/ts-helpers';
+import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TreeNode } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { SearchIcon } from '@coduction/primeng/icons/search';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { Overlay, OverlayModule } from '@coduction/primeng/overlay';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { Tree, TreeModule } from '@coduction/primeng/tree';
+import { ObjectUtils } from '@coduction/primeng/utils';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 import { TreeSelectNodeCollapseEvent, TreeSelectNodeExpandEvent } from './treeselect.interface';
 
 export const TREESELECT_VALUE_ACCESSOR: any = {

@@ -1,13 +1,13 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, Input, NgModule, OnDestroy, Optional, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { Message, MessageService, PrimeTemplate } from 'primeng/api';
-import { CheckIcon } from 'primeng/icons/check';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { RippleModule } from 'primeng/ripple';
+import { Message, MessageService, PrimeTemplate } from '@coduction/primeng/api';
+import { CheckIcon } from '@coduction/primeng/icons/check';
+import { ExclamationTriangleIcon } from '@coduction/primeng/icons/exclamationtriangle';
+import { InfoCircleIcon } from '@coduction/primeng/icons/infocircle';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { Subscription, timer } from 'rxjs';
 
 @Component({

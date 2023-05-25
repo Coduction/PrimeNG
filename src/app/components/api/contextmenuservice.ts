@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Nullable } from 'primeng/ts-helpers';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 import { Subject } from 'rxjs';
 
 @Injectable()

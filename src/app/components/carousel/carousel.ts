@@ -21,13 +21,13 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { RippleModule } from 'primeng/ripple';
-import { UniqueComponentId } from 'primeng/utils';
+import { Footer, Header, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { ChevronLeftIcon } from '@coduction/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { ChevronUpIcon } from '@coduction/primeng/icons/chevronup';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { UniqueComponentId } from '@coduction/primeng/utils';
 import { CarouselResponsiveOptions } from './carousel.interface';
 
 @Component({

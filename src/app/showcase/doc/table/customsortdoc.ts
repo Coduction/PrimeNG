@@ -15,7 +15,7 @@ import { AppDocSectionTextComponent } from '../../layout/doc/docsectiontext/app.
             </p></app-docsectiontext
         >
         <div class="card">
-            <p-table [value]="products" (sortFunction)="customSort($event)" [customSort]="true" [tableStyle]="{ 'min-width': '60rem' }">
+            <p-table [value]="products" (sortFunction)="customSort($event)" [customSort]="true" [tableStyle]="{ 'min-width': '60rem' }" sortMode="multiple">
                 <ng-template pTemplate="header">
                     <tr>
                         <th pSortableColumn="code" style="width:20%">Code <p-sortIcon field="code"></p-sortIcon></th>

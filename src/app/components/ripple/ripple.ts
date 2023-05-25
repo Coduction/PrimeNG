@@ -1,8 +1,8 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, Directive, ElementRef, Inject, NgModule, NgZone, OnDestroy, Optional, PLATFORM_ID, Renderer2 } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { VoidListener } from 'primeng/ts-helpers';
+import { PrimeNGConfig } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { VoidListener } from '@coduction/primeng/ts-helpers';
 
 @Directive({
     selector: '[pRipple]',

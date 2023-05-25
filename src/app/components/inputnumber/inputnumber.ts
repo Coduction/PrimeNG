@@ -22,14 +22,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { TimesIcon } from 'primeng/icons/times';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { Nullable } from 'primeng/ts-helpers';
+import { ButtonModule } from '@coduction/primeng/button';
+import { DomHandler } from '@coduction/primeng/dom';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { AngleUpIcon } from '@coduction/primeng/icons/angleup';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 import { InputNumberInputEvent } from './inputnumber.interface';
 
 export const INPUTNUMBER_VALUE_ACCESSOR: any = {

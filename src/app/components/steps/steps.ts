@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Input, NgModule, OnDestroy, OnInit, Output, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem } from '@coduction/primeng/api';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 import { Subscription } from 'rxjs';
 
 @Component({

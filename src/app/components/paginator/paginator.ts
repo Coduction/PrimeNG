@@ -1,18 +1,18 @@
 import { NgModule, Component, OnInit, Input, Output, ChangeDetectorRef, EventEmitter, TemplateRef, OnChanges, SimpleChanges, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, ContentChildren, QueryList, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
-import { PrimeTemplate, SelectItem } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
-import { SharedModule } from 'primeng/api';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
+import { DropdownModule } from '@coduction/primeng/dropdown';
+import { PrimeTemplate, SelectItem } from '@coduction/primeng/api';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { SharedModule } from '@coduction/primeng/api';
+import { InputNumberModule } from '@coduction/primeng/inputnumber';
+import { AngleDoubleLeftIcon } from '@coduction/primeng/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from '@coduction/primeng/icons/angledoubleright';
+import { AngleLeftIcon } from '@coduction/primeng/icons/angleleft';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
 import { PaginatorState } from './paginator.interface';
-import { Nullable } from 'primeng/ts-helpers';
-import { DropdownChangeEvent } from 'primeng/dropdown';
+import { Nullable } from '@coduction/primeng/ts-helpers';
+import { DropdownChangeEvent } from '@coduction/primeng/dropdown';
 
 @Component({
     selector: 'p-paginator',

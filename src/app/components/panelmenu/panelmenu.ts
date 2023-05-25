@@ -2,13 +2,13 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, Input, NgModule, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 
 export class BasePanelMenuItem {
     constructor(private ref: ChangeDetectorRef) {}
@@ -225,7 +225,7 @@ export class PanelMenuSub extends BasePanelMenuItem {
                             [replaceUrl]="item.replaceUrl"
                             [state]="item.state"
                         >
-                            <!-- 
+                            <!--
                                 <span *ngIf="item.items" class="p-panelmenu-icon pi" [ngClass]="{ 'pi-chevron-right': !item.expanded, 'pi-chevron-down': item.expanded }"></span>
                             -->
                             <ng-container *ngIf="item.items">

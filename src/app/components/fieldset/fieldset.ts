@@ -1,13 +1,13 @@
 import { NgModule, Component, Input, Output, EventEmitter, ElementRef, ChangeDetectionStrategy, ViewEncapsulation, AfterContentInit, QueryList, ContentChildren, TemplateRef } from '@angular/core';
 import { trigger, state, style, transition, animate, AnimationEvent } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate } from 'primeng/api';
-import { BlockableUI } from 'primeng/api';
-import { RippleModule } from 'primeng/ripple';
-import { PlusIcon } from 'primeng/icons/plus';
-import { MinusIcon } from 'primeng/icons/minus';
+import { SharedModule, PrimeTemplate } from '@coduction/primeng/api';
+import { BlockableUI } from '@coduction/primeng/api';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { PlusIcon } from '@coduction/primeng/icons/plus';
+import { MinusIcon } from '@coduction/primeng/icons/minus';
 import { FieldsetAfterToggleEvent, FieldsetBeforeToggleEvent } from './fieldset.interface';
-import { Nullable } from 'primeng/ts-helpers';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 
 let idx: number = 0;
 

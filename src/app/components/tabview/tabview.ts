@@ -22,13 +22,13 @@ import {
     ViewEncapsulation,
     forwardRef
 } from '@angular/core';
-import { BlockableUI, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TimesIcon } from 'primeng/icons/times';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { BlockableUI, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ChevronLeftIcon } from '@coduction/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 import { Subscription } from 'rxjs';
 import { TabViewChangeEvent, TabViewCloseEvent } from './tabview.interface';
 

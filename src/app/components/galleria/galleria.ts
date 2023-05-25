@@ -26,16 +26,16 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
-import { RippleModule } from 'primeng/ripple';
-import { VoidListener } from 'primeng/ts-helpers';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ChevronLeftIcon } from '@coduction/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { WindowMaximizeIcon } from '@coduction/primeng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@coduction/primeng/icons/windowminimize';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { VoidListener } from '@coduction/primeng/ts-helpers';
+import { UniqueComponentId, ZIndexUtils } from '@coduction/primeng/utils';
 import { GalleriaResponsiveOptions } from './galleria.interface';
 
 @Component({

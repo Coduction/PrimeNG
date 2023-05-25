@@ -21,13 +21,13 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { MenuItem, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ChevronLeftIcon } from '@coduction/primeng/icons/chevronleft';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 
 @Component({
     selector: 'p-tabMenu',

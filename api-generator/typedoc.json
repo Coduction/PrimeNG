@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "PrimeNG",
+	"name": "@coduction/primeng",
 	"variant": "project",
 	"kind": 1,
 	"flags": {},
@@ -1180,7 +1180,7 @@
 			]
 		}
 	],
-	"packageName": "primeng",
+	"packagename": "@coduction/primeng",
 	"packageVersion": "15.4.2-SNAPSHOT",
 	"readme": [
 		{

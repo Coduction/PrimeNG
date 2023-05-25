@@ -1,15 +1,15 @@
 import { NgModule, Component, ElementRef, Input, Output, AfterContentInit, EventEmitter, TemplateRef, Inject, forwardRef, ContentChildren, QueryList, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from 'primeng/api';
-import { TreeNode } from 'primeng/api';
-import { PrimeTemplate } from 'primeng/api';
+import { SharedModule } from '@coduction/primeng/api';
+import { TreeNode } from '@coduction/primeng/api';
+import { PrimeTemplate } from '@coduction/primeng/api';
 import { Subject, Subscription } from 'rxjs';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { DomHandler } from 'primeng/dom';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { ChevronUpIcon } from '@coduction/primeng/icons/chevronup';
+import { DomHandler } from '@coduction/primeng/dom';
 import { OrganizationChartNodeCollapseEvent, OrganizationChartNodeExpandEvent, OrganizationChartNodeSelectEvent, OrganizationChartNodeUnSelectEvent } from './organizationchart.interface';
-import { Nullable } from 'primeng/ts-helpers';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 @Component({
     selector: '[pOrganizationChartNode]',
     template: `

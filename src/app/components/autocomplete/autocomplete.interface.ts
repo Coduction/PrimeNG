@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { ScrollerOptions } from 'primeng/scroller';
+import { ScrollerOptions } from '@coduction/primeng/scroller';
 import { AutoComplete } from './autocomplete';
 
 /**

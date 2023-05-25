@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChildren, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { HomeIcon } from 'primeng/icons/home';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { ChevronRightIcon } from '@coduction/primeng/icons/chevronright';
+import { HomeIcon } from '@coduction/primeng/icons/home';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 import { BreadcrumbItemClickEvent } from './breadcrumb.interface';
 
 @Component({

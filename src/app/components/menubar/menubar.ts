@@ -22,14 +22,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { BarsIcon } from 'primeng/icons/bars';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { MenuItem, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { BarsIcon } from '@coduction/primeng/icons/bars';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { VoidListener } from '@coduction/primeng/ts-helpers';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { Subject, Subscription, interval } from 'rxjs';
 import { debounce, filter } from 'rxjs/operators';
 

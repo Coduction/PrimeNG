@@ -1,12 +1,12 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, Inject, Input, NgModule, PLATFORM_ID, QueryList, Renderer2, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MegaMenuItem, MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
+import { MegaMenuItem, MenuItem, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { VoidListener } from '@coduction/primeng/ts-helpers';
 
 @Component({
     selector: 'p-megaMenu',

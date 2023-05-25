@@ -1,8 +1,8 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, Inject, Input, NgModule, OnDestroy, QueryList, Renderer2, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 
 @Component({
     selector: 'p-blockUI',

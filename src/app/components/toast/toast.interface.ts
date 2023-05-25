@@ -1,6 +1,6 @@
 import { TemplateRef } from '@angular/core';
-import { Message } from '../api/message';
-import { Toast } from './toast';
+import { Message } from '@coduction/primeng/api';
+
 /**
  * Breakpoints of toast element.
  */

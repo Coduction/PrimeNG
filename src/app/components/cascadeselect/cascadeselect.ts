@@ -20,16 +20,16 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { ObjectUtils } from 'primeng/utils';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { TimesIcon } from 'primeng/icons/times';
+import { OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { Overlay, OverlayModule } from '@coduction/primeng/overlay';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { ObjectUtils } from '@coduction/primeng/utils';
+import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { TimesIcon } from '@coduction/primeng/icons/times';
 import { CascadeSelectBeforeHideEvent, CascadeSelectBeforeShowEvent, CascadeSelectHideEvent, CascadeSelectShowEvent } from './cascadeselect.interface';
-import { Nullable } from 'primeng/ts-helpers';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 
 export const CASCADESELECT_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

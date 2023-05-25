@@ -1,9 +1,9 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, ChangeDetectorRef, Directive, ElementRef, HostListener, Inject, Input, NgModule, NgZone, OnDestroy, PLATFORM_ID, Renderer2, SimpleChanges, TemplateRef } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { Nullable } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig } from '@coduction/primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { Nullable } from '@coduction/primeng/ts-helpers';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { TooltipOptions } from './tooltip.interface';
 
 @Directive({

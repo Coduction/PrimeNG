@@ -19,23 +19,23 @@ import {
     PLATFORM_ID
 } from '@angular/core';
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
-import { SharedModule, PrimeTemplate, FilterService } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@coduction/primeng/button';
+import { SharedModule, PrimeTemplate, FilterService } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { RippleModule } from '@coduction/primeng/ripple';
 import { CdkDragDrop, DragDropModule, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { AngleDoubleDownIcon } from 'primeng/icons/angledoubledown';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleDoubleUpIcon } from 'primeng/icons/angledoubleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { SearchIcon } from 'primeng/icons/search';
-import { HomeIcon } from 'primeng/icons/home';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from '@coduction/primeng/utils';
+import { AngleDoubleDownIcon } from '@coduction/primeng/icons/angledoubledown';
+import { AngleDoubleLeftIcon } from '@coduction/primeng/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from '@coduction/primeng/icons/angledoubleright';
+import { AngleDoubleUpIcon } from '@coduction/primeng/icons/angledoubleup';
+import { AngleDownIcon } from '@coduction/primeng/icons/angledown';
+import { AngleLeftIcon } from '@coduction/primeng/icons/angleleft';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { AngleUpIcon } from '@coduction/primeng/icons/angleup';
+import { SearchIcon } from '@coduction/primeng/icons/search';
+import { HomeIcon } from '@coduction/primeng/icons/home';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
 import {
     PickListMoveAllToSourceEvent,
     PickListMoveAllToTargetEvent,
@@ -1230,17 +1230,17 @@ export class PickList implements AfterViewChecked, AfterContentInit {
                     .p-picklist[${this.id}] {
                         flex-direction: column;
                     }
-    
+
                     .p-picklist[${this.id}] .p-picklist-buttons {
                         padding: var(--content-padding);
                         flex-direction: row;
                     }
-    
+
                     .p-picklist[${this.id}] .p-picklist-buttons .p-button {
                         margin-right: var(--inline-spacing);
                         margin-bottom: 0;
                     }
-    
+
                     .p-picklist[${this.id}] .p-picklist-buttons .p-button:last-child {
                         margin-right: 0;
                     }

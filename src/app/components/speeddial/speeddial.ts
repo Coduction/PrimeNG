@@ -21,12 +21,12 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { PlusIcon } from 'primeng/icons/plus';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { ButtonModule } from '@coduction/primeng/button';
+import { DomHandler } from '@coduction/primeng/dom';
+import { PlusIcon } from '@coduction/primeng/icons/plus';
+import { RippleModule } from '@coduction/primeng/ripple';
+import { TooltipModule } from '@coduction/primeng/tooltip';
 
 @Component({
     selector: 'p-speedDial',

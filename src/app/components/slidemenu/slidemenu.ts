@@ -24,14 +24,14 @@ import {
     forwardRef
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { CaretLeftIcon } from 'primeng/icons/caretleft';
-import { CaretRightIcon } from 'primeng/icons/caretright';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { MenuItem, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
+import { CaretLeftIcon } from '@coduction/primeng/icons/caretleft';
+import { CaretRightIcon } from '@coduction/primeng/icons/caretright';
+import { TooltipModule } from '@coduction/primeng/tooltip';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 
 @Component({
     selector: 'p-slideMenuSub',

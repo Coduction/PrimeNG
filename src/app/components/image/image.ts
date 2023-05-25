@@ -2,16 +2,16 @@ import { AnimationEvent, animate, style, transition, trigger } from '@angular/an
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, Inject, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { EyeIcon } from 'primeng/icons/eye';
-import { RefreshIcon } from 'primeng/icons/refresh';
-import { SearchMinusIcon } from 'primeng/icons/searchminus';
-import { SearchPlusIcon } from 'primeng/icons/searchplus';
-import { TimesIcon } from 'primeng/icons/times';
-import { UndoIcon } from 'primeng/icons/undo';
-import { ZIndexUtils } from 'primeng/utils';
-import { Nullable } from 'primeng/ts-helpers';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { EyeIcon } from '@coduction/primeng/icons/eye';
+import { RefreshIcon } from '@coduction/primeng/icons/refresh';
+import { SearchMinusIcon } from '@coduction/primeng/icons/searchminus';
+import { SearchPlusIcon } from '@coduction/primeng/icons/searchplus';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { UndoIcon } from '@coduction/primeng/icons/undo';
+import { ZIndexUtils } from '@coduction/primeng/utils';
+import { Nullable } from '@coduction/primeng/ts-helpers';
 
 @Component({
     selector: 'p-image',

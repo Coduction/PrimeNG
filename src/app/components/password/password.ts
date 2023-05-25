@@ -29,15 +29,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { InputTextModule } from 'primeng/inputtext';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from '@coduction/primeng/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@coduction/primeng/dom';
+import { InputTextModule } from '@coduction/primeng/inputtext';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { Subscription } from 'rxjs';
-import { TimesIcon } from 'primeng/icons/times';
-import { EyeSlashIcon } from 'primeng/icons/eyeslash';
-import { EyeIcon } from 'primeng/icons/eye';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { EyeSlashIcon } from '@coduction/primeng/icons/eyeslash';
+import { EyeIcon } from '@coduction/primeng/icons/eye';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
 import { AnimationEvent } from '@angular/animations';
 
 type Meter = {

@@ -1,6 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { VirtualScroller } from './virtualscroller';
-import { ScrollerOptions } from 'primeng/scroller';
+import { ScrollerOptions } from '@coduction/primeng/scroller';
 
 /**
  * Custom lazy load event.

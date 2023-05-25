@@ -21,13 +21,13 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
-import { PrimeNGConfig, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, SharedModule } from '@coduction/primeng/api';
+import { DomHandler } from '@coduction/primeng/dom';
+import { TimesIcon } from '@coduction/primeng/icons/times';
+import { WindowMaximizeIcon } from '@coduction/primeng/icons/windowmaximize';
+import { WindowMinimizeIcon } from '@coduction/primeng/icons/windowminimize';
+import { Nullable, VoidListener } from '@coduction/primeng/ts-helpers';
+import { ZIndexUtils } from '@coduction/primeng/utils';
 import { DynamicDialogConfig } from './dynamicdialog-config';
 import { DynamicDialogRef } from './dynamicdialog-ref';
 import { DynamicDialogContent } from './dynamicdialogcontent';
