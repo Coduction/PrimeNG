@@ -5,8 +5,6 @@ import { BaseIcon } from '@coduction/primeng/baseicon';
     selector: 'SpinnerIcon',
     standalone: true,
     imports: [BaseIcon],
-    template: `
-        <i class="fa fa-spin fa-rotate"></i>
-    `
+    template: ` <i class="fa fa-spin fa-rotate"></i> `
 })
 export class SpinnerIcon extends BaseIcon {}
