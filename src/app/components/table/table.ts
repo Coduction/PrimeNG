@@ -3431,7 +3431,7 @@ export class SortIcon implements OnInit, OnDestroy {
     }
 
     isMultiSorted() {
-        return this.dt.sortMode === 'multiple' && this.getMultiSortMetaIndex() > -1;
+        return this.dt.sortMode === 'multiple' && this.dt._multiSortMeta?.length > 1 && this.getMultiSortMetaIndex() > -1;
     }
 
     ngOnDestroy() {
