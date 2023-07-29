@@ -1,0 +1,43 @@
+name: Build Library - Release without Testing
+
+on:
+  workflow_dispatch:
+    inputs:
+      major:
+        description: 'Major'
+        required: true
+        default: '0'
+      minor:
+        description: 'Minor'
+        required: true
+        default: '0'
+      patch:
+        description: 'Patch'
+        required: true
+        default: '0'
+      deploy:
+        description: 'Deploy'
+        type: boolean
+
+env:
+  FONTAWESOME_NPM_TOKEN: ${{ secrets.FONTAWESOME_NPM_TOKEN }}
+  CODUCTION_PACKAGES_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  MAJOR: ${{ github.event.inputs.major }}
+  MINOR: ${{ github.event.inputs.minor }}
+  PATCH: ${{ github.event.inputs.patch }}
+  CHANNEL: ${{ github.event.inputs.channel }}
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    name: Build Latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+    - run: npm install
+    - run: npm run build:package
+    - run: npm publish ./dist --tag latest
