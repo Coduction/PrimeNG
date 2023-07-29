@@ -9,7 +9,10 @@ import { TimesIcon } from '@coduction/primeng/icons/times';
 import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
 import { RippleModule } from '@coduction/primeng/ripple';
 import { Subscription, timer } from 'rxjs';
-
+/**
+ * Messages is used to display alerts inline.
+ * @group Components
+ */
 @Component({
     selector: 'p-messages',
     template: `

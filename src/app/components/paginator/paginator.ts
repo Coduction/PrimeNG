@@ -13,7 +13,10 @@ import { AngleRightIcon } from '@coduction/primeng/icons/angleright';
 import { PaginatorState } from './paginator.interface';
 import { Nullable } from '@coduction/primeng/ts-helpers';
 import { DropdownChangeEvent } from '@coduction/primeng/dropdown';
-
+/**
+ * Paginator is a generic component to display content in paged format.
+ * @group Components
+ */
 @Component({
     selector: 'p-paginator',
     template: `

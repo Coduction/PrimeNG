@@ -4,7 +4,10 @@ import { CheckIcon } from '@coduction/primeng/icons/check';
 import { ExclamationTriangleIcon } from '@coduction/primeng/icons/exclamationtriangle';
 import { InfoCircleIcon } from '@coduction/primeng/icons/infocircle';
 import { TimesCircleIcon } from '@coduction/primeng/icons/timescircle';
-
+/**
+ * Message groups a collection of contents in tabs.
+ * @group Components
+ */
 @Component({
     selector: 'p-message',
     template: `

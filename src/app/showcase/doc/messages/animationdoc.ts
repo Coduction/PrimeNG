@@ -19,7 +19,7 @@ export class AnimationDoc implements OnInit {
 
     @Input() title: string;
 
-    messages: Message[];
+    messages: Message[] | undefined;
 
     ngOnInit() {
         this.messages = [
@@ -44,7 +44,7 @@ import { Message } from '@coduction/primeng/api';
     templateUrl: './messages-animation-demo.html'
 })
 export class MessagesAnimationDemo implements OnInit {
-    messages: Message[];
+    messages: Message[] | undefined;
 
     ngOnInit(){
         this.messages = [

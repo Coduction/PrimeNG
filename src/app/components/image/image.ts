@@ -1,6 +1,6 @@
 import { AnimationEvent, animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, Inject, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, ElementRef, EventEmitter, HostListener, Inject, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
 import { PrimeNGConfig, PrimeTemplate, SharedModule } from '@coduction/primeng/api';
 import { DomHandler } from '@coduction/primeng/dom';
@@ -12,7 +12,10 @@ import { TimesIcon } from '@coduction/primeng/icons/times';
 import { UndoIcon } from '@coduction/primeng/icons/undo';
 import { ZIndexUtils } from '@coduction/primeng/utils';
 import { Nullable } from '@coduction/primeng/ts-helpers';
-
+/**
+ * Displays an image with preview and tranformation options. For multiple image, see Galleria.
+ * @group Components
+ */
 @Component({
     selector: 'p-image',
     template: `
@@ -149,7 +152,7 @@ export class Image implements AfterContentInit {
      * @param {Event} event - Browser event.
      * @group Emits
      */
-    @Output() onImageError: EventEmitter<Event> = new EventEmitter();
+    @Output() onImageError: EventEmitter<Event> = new EventEmitter<Event>();
 
     @ViewChild('mask') mask: ElementRef | undefined;
 
@@ -336,6 +339,12 @@ export class Image implements AfterContentInit {
 
     imageError(event: Event) {
         this.onImageError.emit(event);
+    }
+
+    @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(event: KeyboardEvent) {
+        if (this.previewVisible) {
+            this.closePreview();
+        }
     }
 }
 

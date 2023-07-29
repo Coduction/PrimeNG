@@ -1,15 +1,6 @@
 import { TemplateRef } from '@angular/core';
 import { Message } from '@coduction/primeng/api';
-
-/**
- * Breakpoints of toast element.
- */
-export interface ToastBreakpoints {
-    /**
-     * Breakpoint for responsive mode.
-     */
-    [key: string]: any;
-}
+import { Toast } from './toast';
 
 /**
  * Defines valid templates in Toast.
@@ -29,6 +20,7 @@ export interface ToastTemplates {
 /**
  * Custom close event.
  * @see {@link Toast.onClose}
+ * @group Events
  */
 export interface ToastCloseEvent {
     /**

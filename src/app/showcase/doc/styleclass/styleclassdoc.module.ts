@@ -9,11 +9,10 @@ import { StyleClassModule } from '@coduction/primeng/styleclass';
 import { ButtonModule } from '@coduction/primeng/button';
 import { InputTextModule } from '@coduction/primeng/inputtext';
 import { AnimationDoc } from './animationdoc';
-import { PropsDoc } from './propsdoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, StyleClassModule, ButtonModule, InputTextModule],
-    declarations: [ImportDoc, ToggleClassDoc, AnimationDoc, PropsDoc],
+    declarations: [ImportDoc, ToggleClassDoc, AnimationDoc],
     exports: [AppDocModule]
 })
 export class StyleClassDocModule {}

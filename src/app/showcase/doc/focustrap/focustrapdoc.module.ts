@@ -10,11 +10,10 @@ import { DropdownModule } from '@coduction/primeng/dropdown';
 import { FocusTrapModule } from '@coduction/primeng/focustrap';
 import { ImportDoc } from './importdoc';
 import { BasicDoc } from './basicdoc';
-import { PropsDoc } from './propsdoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, FormsModule, ButtonModule, InputTextModule, DropdownModule, FocusTrapModule],
-    declarations: [ImportDoc, BasicDoc, PropsDoc],
+    declarations: [ImportDoc, BasicDoc],
     exports: [AppDocModule]
 })
 export class FocusTrapDocModule {}

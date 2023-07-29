@@ -6,7 +6,10 @@ import { ChevronDownIcon } from '@coduction/primeng/icons/chevrondown';
 import { TieredMenu, TieredMenuModule } from '@coduction/primeng/tieredmenu';
 
 type SplitButtonIconPosition = 'left' | 'right';
-
+/**
+ * SplitButton groups a set of commands in an overlay with a default command.
+ * @group Components
+ */
 @Component({
     selector: 'p-splitButton',
     template: `

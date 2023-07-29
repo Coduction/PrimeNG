@@ -15,7 +15,7 @@ export interface Props {
 const app_dependencies = pkg ? pkg.devDependencies : {};
 
 const PrimeNG = {
-    version: '16.0.0-rc.1',
+    version: '16.1.0',
     description:
         'PrimeNG is an open source UI library for Angular featuring a rich set of 90+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 370+ ready to use UI blocks to build spectacular applications in no time.'
 };
@@ -480,6 +480,7 @@ ${routeImports}
 import { AccordionModule } from '@coduction/primeng/accordion';
 import { AutoCompleteModule } from '@coduction/primeng/autocomplete';
 import { AvatarModule } from '@coduction/primeng/avatar';
+import { AvatarGroupModule } from '@coduction/primeng/avatargroup';
 import { BadgeModule } from '@coduction/primeng/badge';
 import { BreadcrumbModule } from '@coduction/primeng/breadcrumb';
 import { ButtonModule } from '@coduction/primeng/button';
@@ -568,6 +569,7 @@ ${serviceImports}
 @NgModule({
   imports: [
     AvatarModule,
+    AvatarGroupModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
@@ -718,9 +720,7 @@ export class AppModule {}`;
                     test: 'ng test'
                 },
                 dependencies: {
-                    ...dependencies,
-                    jspdf: '1.5.3',
-                    'jspdf-autotable': '3.2.5'
+                    ...dependencies
                 }
             }
         },
